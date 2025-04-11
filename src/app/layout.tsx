@@ -73,29 +73,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Arnnik Islam Payel",
-              "url": "https://arnnikislam.vercel.app",
-              "image": "https://arnnikislam.vercel.app/assets/profile.jpg",
-              "description": "Web Developer, Wi-Fi Pentester, and Tech Content Creator",
-              "jobTitle": "Web Developer",
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Freelance"
-              },
-              "sameAs": [
-                "https://github.com/arnnikislam",
-                "https://www.linkedin.com/in/arnnikislam/",
-                "https://www.youtube.com/@arnnikislam"
-              ]
-            })
-          }}
-        />
       </head>
       <body className="font-sans bg-white dark:bg-[#0a0a23] text-gray-900 dark:text-white">
         <ThemeProvider>

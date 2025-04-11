@@ -1,19 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ['images.unsplash.com', 'raw.githubusercontent.com'],
-    formats: ['image/avif', 'image/webp'],
-  },
-  compress: true,
-  poweredByHeader: false,
   reactStrictMode: true,
-  swcMinify: true,
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
+  images: {
+    domains: ['github.com', 'raw.githubusercontent.com'],
+    unoptimized: true,
   },
-  // Remove the headers configuration as it might cause issues with Vercel
-  // Enable static exports for Vercel deployment
-  output: 'standalone',
+  // Enable static exports for Vercel deployment if needed
+  // output: 'export',
 };
 
 module.exports = nextConfig;
