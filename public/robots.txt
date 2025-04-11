@@ -5,6 +5,10 @@ Allow: /
 # Sitemap location
 Sitemap: https://arnnikislam.vercel.app/sitemap.xml
 
-# Disallow admin and private areas
+# Disallow admin and private pages
 Disallow: /admin/
-Disallow: /private/ 
+Disallow: /private/
+Disallow: /api/
+
+# Crawl-delay
+Crawl-delay: 10 
