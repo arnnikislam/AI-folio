@@ -26,10 +26,10 @@ export const metadata: Metadata = {
     siteName: 'Arnnik Islam Payel Portfolio',
     images: [
       {
-        url: '/og-image.jpg',
+        url: 'https://arnnikislam.vercel.app/assets/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Arnnik Islam Payel Portfolio',
+        alt: 'Arnnik Islam Payel - Web Developer & Tech Enthusiast',
       },
     ],
   },
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Arnnik Islam Payel - Web Developer & Tech Enthusiast',
     description: 'Portfolio of Arnnik Islam Payel - Web Developer, Wi-Fi Pentester, and Tech Content Creator',
-    images: ['/og-image.jpg'],
-    creator: '@your_twitter_handle',
+    images: ['https://arnnikislam.vercel.app/assets/og-image.png'],
+    creator: '@arnnikislam',
   },
   robots: {
     index: true,
