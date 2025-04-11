@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-site-verification-code',
+    google: '23rTVx59TeV6aFkYZao7ID1meJkZSNClnrUAw6X5Hc8',
   },
   alternates: {
     canonical: 'https://arnnikislam.vercel.app',
