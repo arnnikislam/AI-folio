@@ -533,20 +533,11 @@ export default function Home() {
               >
                 <div className="flex flex-col items-center p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 h-full">
                   <div className="mb-4 p-3 bg-white dark:bg-gray-700 rounded-full w-16 h-16 flex items-center justify-center shadow-sm">
-                    {/* If icon file exists, show it, otherwise use a text placeholder */}
                     <div className="w-10 h-10 relative">
-                      {/* Text fallback that shows up only if image fails to load */}
-                      <div className="absolute inset-0 flex items-center justify-center text-2xl font-bold text-primary">
-                        {skill.name.charAt(0)}
-                      </div>
                       <img 
                         src={skill.icon} 
                         alt={skill.name} 
-                        className="w-full h-full object-contain relative z-10"
-                        onError={(e) => {
-                          // Make the target's opacity 0 if the image fails to load
-                          e.currentTarget.style.opacity = "0";
-                        }}
+                        className="w-full h-full object-contain"
                       />
                     </div>
                   </div>

@@ -74,7 +74,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
-      <body className="font-sans">
+      <body className="font-sans bg-white dark:bg-[#0a0a23] text-gray-900 dark:text-white">
         <ThemeProvider>
           <Navbar />
           <div className="pt-16">

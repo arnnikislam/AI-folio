@@ -52,7 +52,7 @@ export default function ThemeProvider({ children }: ThemeProviderProps) {
     <NextThemesProvider 
       attribute="class" 
       defaultTheme="system" 
-      enableSystem 
+      enableSystem={true}
       storageKey="theme-preference"
       enableColorScheme
       disableTransitionOnChange={false}

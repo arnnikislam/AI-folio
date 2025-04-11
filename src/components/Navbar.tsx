@@ -56,8 +56,8 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 z-50 w-full transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/90 dark:bg-dark/90 backdrop-blur-lg shadow-lg' 
-        : 'bg-light dark:bg-dark'
+        ? 'bg-white/90 dark:bg-[#0a0a23]/90 backdrop-blur-lg shadow-lg' 
+        : 'bg-white dark:bg-[#0a0a23]'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -96,26 +96,11 @@ export default function Navbar() {
                     className={`relative nav-link group px-2 py-2 rounded-lg flex items-center gap-1 text-sm transition-all duration-300 ${
                       (link.path === '/showcase' && isShowcasePage) || (link.path !== '/showcase' && isActive(link.path))
                         ? 'text-primary font-semibold bg-primary/5 dark:bg-primary/10'
-                        : 'hover:bg-gray-100 dark:hover:bg-gray-800'
+                        : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
                     }`}
                   >
-                    <span className={`transition-all duration-300 ${
-                      (link.path === '/showcase' && isShowcasePage) || (link.path !== '/showcase' && isActive(link.path)) 
-                        ? 'text-primary' 
-                        : 'text-gray-400 dark:text-gray-500 group-hover:text-primary'
-                    }`}>
-                      {link.icon}
-                    </span>
-                    {link.name}
-                    {((link.path === '/showcase' && isShowcasePage) || (link.path !== '/showcase' && isActive(link.path))) && (
-                      <motion.span
-                        layoutId="activeIndicator"
-                        className="absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.3 }}
-                      />
-                    )}
+                    {link.icon}
+                    <span>{link.name}</span>
                   </Link>
                 </motion.div>
               ))}
