@@ -7,6 +7,24 @@ import { useInView } from 'react-intersection-observer';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { personalInfo } from '@/data/personalInfo';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Me | Arnnik Islam Payel',
+  description: 'Learn more about Arnnik Islam Payel - Web Developer, Wi-Fi Pentester, and Tech Content Creator. Discover my journey, skills, and passion for technology.',
+  openGraph: {
+    title: 'About Me | Arnnik Islam Payel',
+    description: 'Learn more about Arnnik Islam Payel - Web Developer, Wi-Fi Pentester, and Tech Content Creator. Discover my journey, skills, and passion for technology.',
+    images: [
+      {
+        url: 'https://arnnikislam.vercel.app/assets/profile.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Arnnik Islam Payel - About Me',
+      },
+    ],
+  },
+};
 
 export default function About() {
   const [headerRef, headerInView] = useInView({
