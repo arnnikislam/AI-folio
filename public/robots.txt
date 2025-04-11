@@ -1,0 +1,10 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://arnnikislam.vercel.app/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/ 
