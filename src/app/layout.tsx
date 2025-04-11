@@ -4,7 +4,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ThemeProvider from '@/components/ThemeProvider';
 import Navbar from '@/components/Navbar';
-import StructuredData from '@/components/StructuredData';
 
 // We'll use system fonts instead of loading Inter to avoid font loading issues
 
@@ -74,10 +73,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <StructuredData />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta name="theme-color" content="#0a0a23" media="(prefers-color-scheme: dark)" />
-        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
       </head>
       <body className="font-sans bg-white dark:bg-[#0a0a23] text-gray-900 dark:text-white">
         <ThemeProvider>
