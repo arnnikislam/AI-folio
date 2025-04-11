@@ -2,8 +2,7 @@
 
 ![Portfolio Preview](./public/assets/project-ss.png)
 
-🌐 **Live Website:** [arnnikislam.vercel.app](https://arnnikislam.vercel.app)  
-📁 **Repository:** [github.com/arnnikislam/AI-folio](https://github.com/arnnikislam/AI-folio)
+🌐 **Live Website :** [arnnikislam.vercel.app](https://arnnikislam.vercel.app)
 
 [![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://arnnikislam.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/arnnikislam/AI-folio)
@@ -162,7 +161,7 @@ Use the [Contact Form](https://arnnikislam.vercel.app/contact) on the site, or o
 - 👤 Profile content sourced from [Arnnik Islam's GitHub](https://github.com/arnnikislam)  
 - 🎨 Design inspiration from modern portfolio trends and open-source creators  
 - 💡 Special thanks to the open-source community for the amazing tools that made this project possible  
-- 🤖 AI tools used: [Cyrsor AI](https://cyrsor.ai) & [Windsurf AI](https://windsurf.ai) for creative support  
+- 🤖 AI tools used: [Cursor AI](https://cursor.ai) & [Windsurf AI](https://windsurf.ai) for creative support  
 
 ---
 
