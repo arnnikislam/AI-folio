@@ -1,167 +1,173 @@
-# Arnnik Islam Payel - Personal Portfolio
+# 🚀 Arnnik Islam Payel – Personal Portfolio
 
-![Portfolio Preview](./public/assets/project-ss.jpg)
+![Portfolio Preview](./public/assets/project-ss.png)
 
-A modern, responsive personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion. This portfolio showcases my skills, projects, and professional journey in an interactive and visually appealing way.
+🌐 **Live Website:** [arnnikislam.vercel.app](https://arnnikislam.vercel.app)  
+📁 **Repository:** [github.com/arnnikislam/AI-folio](https://github.com/arnnikislam/AI-folio)
 
-## Features
+[![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://arnnikislam.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/arnnikislam/AI-folio)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3-purple)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-10.16-pink)](https://www.framer.com/motion/)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black)](https://vercel.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-18.17-green)](https://nodejs.org/)
+[![npm](https://img.shields.io/badge/npm-9.6-red)](https://www.npmjs.com/)
 
-- **Modern UI/UX Design**: Clean, professional interface with attention to detail and aesthetics
-- **Responsive Design**: Works seamlessly on all devices (mobile, tablet, desktop)
-- **Dark/Light Mode**: Toggle between themes with smooth transitions and persistent state
-- **Interactive Animations**: Powered by Framer Motion for engaging user experience
-- **Next.js App Router**: Modern routing with Next.js 14 for optimal performance
-- **Type Safety**: Built with TypeScript for robust code quality
-- **Tailwind CSS**: Utility-first CSS framework for rapid UI development
-- **Dynamic Content**: Easily updateable content through structured data files
-- **Contact Form**: EmailJS integration for sending messages without a backend
-- **Social Media Integration**: Links to all professional profiles and platforms
-- **SEO Optimized**: Properly structured for search engine visibility
-- **Fast Loading**: Optimized assets and code splitting for quick page loads
-- **Accessibility**: Designed with accessibility considerations
-- **Custom Theme Colors**: Tailored color scheme with gradient effects
 
-## Sections
+A modern, high-performance developer portfolio built with **Next.js**, **TypeScript**, and **Tailwind CSS**. Showcasing my projects, skills, blogs, and professional presence with a sleek, responsive, and accessible UI.
 
-- **Home**: Interactive introduction with animated elements and quick navigation
-- **About**: Personal information, background, and professional summary
-- **Skills**: Technical skills and areas of expertise with visual representation
-- **Education**: Academic background and qualifications with timeline
-- **Projects**: Showcase of personal projects with details and live links
-- **Resume**: Downloadable resume and professional experience summary
-- **Testimonials**: Feedback and recommendations from colleagues and clients
-- **Contact**: Interactive contact form and social media presence
-- **Showcase**: Additional accomplishments, certificates, and recognition
+---
 
-## Getting Started
+## ✨ Key Features
 
-### Prerequisites
+- 🎨 Elegant, modern UI design  
+- 🌗 Light & Dark mode toggle  
+- 📱 Fully responsive on all devices  
+- ⚡ Optimized performance with Next.js  
+- 🎬 Smooth page transitions with Framer Motion  
+- 🔍 SEO optimized for better reach  
+- 📝 Blog section for writing and tutorials  
+- 🧠 Skills section with animated progress indicators  
+- 📂 Project showcase with category filtering  
+- 📧 Contact form integrated with EmailJS  
 
-- Node.js (v18 or later)
-- npm or yarn
+---
 
-### Installation
+## 🛠️ Tech Stack
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/arnnikislam/my-portfolio.git
-   cd my-portfolio
-   ```
+| Category       | Technologies                                  |
+|----------------|-----------------------------------------------|
+| **Framework**  | Next.js 14                                     |
+| **Language**   | TypeScript                                     |
+| **Styling**    | Tailwind CSS                                   |
+| **Animations** | Framer Motion                                  |
+| **Icons**      | React Icons                                    |
+| **Forms**      | React Hook Form + EmailJS                      |
+| **Deployment** | Vercel                                         |
 
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+---
 
-3. Configure EmailJS (for contact form):
-   - Sign up at [EmailJS](https://www.emailjs.com/)
-   - Create a service and email template
-   - Update the service ID, template ID, and user ID in `src/app/contact/page.tsx`
+## 🚀 Getting Started
 
-4. Add your assets:
-   - Place your profile picture at `public/assets/profile.jpg`
-   - Place your resume at `public/assets/resume.pdf`
-   - Add project images to `public/assets/projects/`
+Follow these steps to run the project locally:
 
-### Development
+```bash
+# Clone the repository
+git clone https://github.com/arnnikislam/AI-folio.git
 
-Run the development server:
+# Navigate into the project directory
+cd AI-folio
+
+# Install the dependencies
+npm install
+```
+
+### 🔐 Set Up Environment Variables
+
+Create a `.env.local` file in the root directory and add your [EmailJS](https://www.emailjs.com/) credentials:
+
+```env
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+```
+
+### ▶️ Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Building for Production
+---
 
-```bash
-npm run build
-# or
-yarn build
-```
-
-### Deployment
-
-This project is optimized for deployment on Vercel:
-
-1. Push your code to a GitHub repository
-2. Import the project in Vercel
-3. Deploy
-
-## Customization
-
-- Update personal information in `src/data/personalInfo.ts`
-- Modify education details in `src/data/education.ts`
-- Edit skills in `src/data/skills.ts`
-- Update projects in `src/data/projects.ts`
-- Add testimonials in `src/data/testimonials.ts`
-- Customize theme colors in `tailwind.config.js`
-
-## Project Structure
+## 📁 Project Structure
 
 ```
-my-portfolio/
-├── public/            # Static assets
-│   └── assets/        # Images and downloadable files
+AI-folio/
 ├── src/
-│   ├── app/           # Next.js app router pages
-│   ├── components/    # Reusable UI components
-│   ├── data/          # Content data files
-│   ├── styles/        # Global styles
-│   ├── types/         # TypeScript type definitions
-│   └── utils/         # Utility functions
-├── tailwind.config.js # Tailwind configuration
-├── next.config.js     # Next.js configuration
-└── tsconfig.json      # TypeScript configuration
+│   ├── app/               # Next.js app routes
+│   │   ├── (routes)/      # Pages: about, projects, blog, etc.
+│   ├── components/        # Reusable UI components
+│   ├── data/              # Static data: projects, skills, etc.
+│   ├── lib/               # Utility functions
+│   ├── styles/            # Global styles and themes
+│   └── types/             # TypeScript type definitions
+├── public/                # Public assets
+├── .env.local             # Environment variables
+├── next.config.js         # Next.js configuration
+├── tailwind.config.js     # TailwindCSS configuration
+├── package.json           # Dependencies and scripts
+└── README.md              # Project documentation
 ```
 
-## Key Technologies
+---
 
-- [Next.js](https://nextjs.org/) - React framework for production
-- [React](https://reactjs.org/) - UI component library
-- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Framer Motion](https://www.framer.com/motion/) - Animation library
-- [EmailJS](https://www.emailjs.com/) - Client-side email sending
-- [React Icons](https://react-icons.github.io/react-icons/) - Icon library
-- [next-themes](https://github.com/pacocoursey/next-themes) - Theme management
-- [React Slick](https://react-slick.neostack.com/) - Carousel component
-- [Chart.js](https://www.chartjs.org/) - Data visualization
-- [React CountUp](https://github.com/glennreyes/react-countup) - Animated counters
-- [React Intersection Observer](https://github.com/thebuilder/react-intersection-observer) - Scroll animations
+## 🎨 Customization Guide
 
-## Performance Optimizations
+Make it your own by updating:
 
-- Image optimization with Next.js Image component
-- Code splitting and lazy loading for faster initial load
-- Server-side rendering for improved SEO
-- Font optimization with system fonts
-- Efficient asset loading strategies
+- `src/data/personalInfo.ts` – Your name, bio, social links  
+- `src/data/skills.ts` – Your skill list and progress  
+- `src/data/projects.ts` – Add your personal or team projects  
+- `src/data/blog.ts` – Write and manage blog content  
+- `tailwind.config.js` – Update colors, fonts, spacing, etc.  
 
-## Browser Support
+---
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+## 🚢 Deployment (via Vercel)
 
-## License
+Deploy your own copy in just a few clicks:
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+1. Fork this repository  
+2. Go to [vercel.com](https://vercel.com) and create a new project  
+3. Link your forked GitHub repository  
+4. Add the environment variables  
+5. Hit **Deploy**
 
-## Acknowledgments
+---
 
-- Profile content sourced from [Arnnik Islam's GitHub](https://github.com/arnnikislam)
-- Design inspiration from modern portfolio trends
-- Special thanks to the open-source community for the amazing tools that made this project possible
+## 🤝 Contributing
 
-## Connect With Me
+Got a suggestion or found a bug? Feel free to:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/arnnikislam)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@learnwitharnnik)
+- Open an issue  
+- Submit a pull request  
+- Share feedback  
+
+Contributions are always welcome ❤️
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for more information.
+
+---
+
+## 📬 Contact
+
+Got questions or ideas?  
+Use the [Contact Form](https://arnnikislam.vercel.app/contact) on the site, or open an issue here on GitHub.
+
+---
+
+## 🙌 Acknowledgments
+
+- 👤 Profile content sourced from [Arnnik Islam's GitHub](https://github.com/arnnikislam)  
+- 🎨 Design inspiration from modern portfolio trends and open-source creators  
+- 💡 Special thanks to the open-source community for the amazing tools that made this project possible  
+- 🤖 AI tools used: [Cyrsor AI](https://cyrsor.ai) & [Windsurf AI](https://windsurf.ai) for creative support  
+
+---
+
+## 🌐 Connect with Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/arnnikislam)  
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@learnwitharnnik)  
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/arnnikislam)
